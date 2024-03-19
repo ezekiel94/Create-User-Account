@@ -13,6 +13,7 @@ function validateFullNameInput(){
     let fullDeclareName = fullNameInput.value
     if(fullDeclareName.length == 0){
         fullNameAlert.innerText = "Enter your full name"
+        fullNameInput.style.border = "none"
         fullNameAlert.style.fontSize = "0.5rem"
         fullNameInput.style.outline = "1px solid red"
     }else if(!fullDeclareName.match(/^[^\d]*$/)){
